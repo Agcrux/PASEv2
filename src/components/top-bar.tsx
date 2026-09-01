@@ -1,4 +1,5 @@
 import { NotificationBell } from "@/components/notification-bell";
+import { SignOutButton } from "@/components/sign-out-button";
 
 interface TopBarProps {
   /** Shown on the right, e.g. the student's name or ID. */
@@ -21,7 +22,7 @@ export function TopBar({
         {userLabel && (
           <span className="text-sm text-slate-600">{userLabel}</span>
         )}
-        {/* TODO(Part A): add sign-out button wired to session.destroySession */}
+        <SignOutButton />
       </div>
     </header>
   );
